@@ -1,9 +1,4 @@
 
-from os import environ
-from flask import Flask
-
-app = Flask(__name__)
-app.run(environ.get('PORT'))
 
 
 # coding: utf-8
@@ -28,8 +23,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Import API Keys
-from config import (consumer_key, consumer_secret, 
-                    access_token, access_token_secret)
+# from config import (consumer_key, consumer_secret, 
+#                     access_token, access_token_secret)
+from os import environ
+CONSUMER_KEY = environ['CONSUMER_KEY']
+CONSUMER_SECRET = environ['CONSUMER_SECRET']
+ACCESS_KEY = environ['ACCESS_KEY']
+ACCESS_SECRET = environ['ACCESS_SECRET']
 
 
 # In[2]:
