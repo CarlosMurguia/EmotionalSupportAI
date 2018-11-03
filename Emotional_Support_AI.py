@@ -85,12 +85,7 @@ def EmotionAnalysis():
                 except Exception:
                     pass
                 
-            print("Tweet Author: " + tweet_author)
-            print("Tweet ID: " + str(tweet_id))
-            print("Sadness Level: " + str(sadness_level))
-            print("Tweet Text: " + tweet_text)
-            print("Analyzed Tweets: " + str(analyzed_tweets))
-            print(json.dumps(response, indent=2))
+            
             
 
             
@@ -100,8 +95,6 @@ def EmotionAnalysis():
 
            
             
-        if tweet_id in analyzed_tweets:
-            print("We already anayzed this tweet: " + str(tweet_id))
         
 
 
