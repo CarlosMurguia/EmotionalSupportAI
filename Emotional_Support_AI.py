@@ -86,7 +86,7 @@ def EmotionAnalysis():
             sadness_level = json.loads(jsonified_response)["emotion"]["document"]["emotion"]["sadness"]
 
             
-            if sadness_level > .70:
+            if sadness_level > .60:
                 try:
                     api.update_status("Hello @"+ tweet_author + "! It seems like you're having a rough time. Try visiting our website, it might help! www.emotionalsupportai.org")
                 except Exception:
